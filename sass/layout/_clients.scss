@@ -1,33 +1,81 @@
 .clients__container {
-  height: 184px;
+
+  @media screen and (min-width: 768px) {
+    max-height: 277px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-height: 184px;
+  }
 }
   
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   list-style: none;
+
+  @media screen and (min-width: 450px) and (max-width: 479px) {
+    justify-content: space-between;;
+  }
+
+  
 }
   
 .clients__item {
   &:not(:last-child) {
-  margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 480px) {
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+    
+    &:nth-child(3n + 0) {
+      margin-right: 0;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+    margin-right: 30px;
+    }
   }
 }
   
 .clients__link {
   display: flex;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid var(--bord-icon);
   color: var(--bord-icon);
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 16px 32px;
+  padding: 16px 52px;
   transition: border-color var(--standard-animation);
 
   &:hover,
   &:focus {
     border-color: var(--accent-cl);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 16px 60px;
+    width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 16px 32px;
+    width: 170px;
   }
 }
 
