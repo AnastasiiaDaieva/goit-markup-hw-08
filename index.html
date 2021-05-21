@@ -52,7 +52,7 @@
     <section class="hero">
       <div class="container-fluid">
         <h1 class="hero__heading">
-          Эффективные решения <br/>
+          Эффективные решения <br />
           для вашего бизнеса
         </h1>
         <button type="button" class="button" data-modal-open>Заказать услугу</button>
@@ -174,7 +174,7 @@
         <ul class="activity__list list">
           <li>
             <div class="activity__thumb">
-              <img src="./images/img_4.jpg" alt="руки на клавиатуре набирают текст" width="370" height="294" />
+              <img src="./images/desktop/img_4.jpg" alt="руки на клавиатуре набирают текст" width="370" height="294" />
               <div class="activity__name">
                 <p class="activity__text">Десктопные приложения</p>
               </div>
@@ -182,7 +182,7 @@
           </li>
           <li>
             <div class="activity__thumb">
-              <img src="./images/img-1.jpg" alt="человек с телефоном в руках" width="370" height="294" />
+              <img src="./images/desktop/img-1.jpg" alt="человек с телефоном в руках" width="370" height="294" />
               <div class="activity__name">
                 <p class="activity__text">Мобильные приложения</p>
               </div>
@@ -190,7 +190,7 @@
           </li>
           <li>
             <div class="activity__thumb">
-              <img src="./images/img-2.jpg" alt="планшет с палитрой цветов на выбор" width="370" height="294" />
+              <img src="./images/desktop/img-2.jpg" alt="планшет с палитрой цветов на выбор" width="370" height="294" />
               <div class="activity__name">
                 <p class="activity__text">Дизайнерские решения</p>
               </div>
@@ -204,7 +204,8 @@
         <h2 class="second-heading team__second-heading">Наша команда</h2>
         <ul class="team-members list">
           <li class="team-members__card">
-            <img src="./images/img.jpg" alt="портрет члена команды" width="270" height="260" class="team-members__img" />
+            <img src="./images/desktop/img.jpg" alt="портрет члена команды" width="270" height="260"
+              class="team-members__img" />
             <div class="team-members__container">
               <h3 class="team-members__name">Игорь Демьяненко</h3>
               <p lang="en" class="team-members__position">Product Designer</p>
@@ -242,7 +243,8 @@
               </ul>
           </li>
           <li class="team-members__card">
-            <img src="./images/img__1.jpg" alt="портрет члена команды" width="270" height="260" class="team-members__img" />
+            <img src="./images/desktop/img__1.jpg" alt="портрет члена команды" width="270" height="260"
+              class="team-members__img" />
             <div class="team-members__container">
               <h3 class="team-members__name">Ольга Репина</h3>
               <p lang="en" class="team-members__position">Frontend Developer</p>
@@ -280,7 +282,40 @@
               </ul>
           </li>
           <li class="team-members__card">
-            <img src="./images/img__2.jpg" alt="портрет члена команды" width="270" height="260" class="team-members__img" />
+            <picture>
+              <source
+                srcset="
+                ./images/desktop/img_2-dt-1x.jpg 1x,
+                ./images/desktop/img_2-dt-2x.jpg 2x
+                "
+                media="(min-width: 1200px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                ./images/tablet/img_2-tab-1x.jpg 1x,
+                ./images/tablet/img_2-tab-2x.jpg 2x"
+                media="(min-width: 768px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                ./images/mobile/img_2-mob-1x.jpg 1x,
+                ./images/mobile/img_2-mob-2x.jpg 2x"
+                media="(max-width: 767.98px)"
+                type="image/jpeg"
+              />
+              <img src="./images/mobile/img_2-mob-1x." width="450" height="460" alt="портрет члена команды" />
+            </picture>
+            <!-- <img 
+            srcset="
+            ,
+            ./images/tablet/img_2-tab-1x.jpg 2x,
+            ./images/desktop/img__2.jpg 3x"
+            src="./images/mobile/img_2-mob-1x.jpg" alt="портрет члена команды"
+            sizes="(min-width: 900px) 600px, (min-width: 600px) 300px, 100vw" 
+            width="270" height="260"
+              class="team-members__img" /> -->
             <div class="team-members__container">
               <h3 class="team-members__name">Николай Тарасов</h3>
               <p lang="en" class="team-members__position">Marketing</p>
@@ -318,7 +353,8 @@
               </ul>
           </li>
           <li class="team-members__card">
-            <img src="./images/img-3.jpg" alt="портрет члена команды" width="270" height="260" class="team-members__img" />
+            <img src="./images/desktop/img-3.jpg" alt="портрет члена команды" width="270" height="260"
+              class="team-members__img" />
             <div class="team-members__container">
               <h3 class="team-members__name">Михаил Ермаков</h3>
               <p lang="en" class="team-members__position">UI Designer</p>
@@ -426,53 +462,54 @@
           </ul>
         </address>
       </div>
-        <div class="footer__join">
-          <h2 class="footer__text">Присоединяйтесь</h2>
-          <ul class="social-media__icons social-media__icons--footer list">
-            <li class="social-media__icon">
-              <a href="" target="_blank" rel="noreferrer noopener" class="social-media__link social-media__link--footer">
-                <svg class="social-media__svg social-media__svg--white">
-                  <use href="./images/icons/sprite-optimized.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media__icon">
-              <a href="" target="_blank" rel="noreferrer noopener" class="social-media__link social-media__link--footer">
-                <svg class="social-media__svg social-media__svg--white">
-                  <use href="./images/icons/sprite-optimized.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media__icon">
-              <a href="" target="_blank" rel="noreferrer noopener" class="social-media__link social-media__link--footer">
-                <svg class="social-media__svg social-media__svg--white">
-                  <use href="./images/icons/sprite-optimized.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media__icon">
-              <a href="" target="_blank" rel="noreferrer noopener" class="social-media__link social-media__link--footer">
-                <svg class="social-media__svg social-media__svg--white">
-                  <use href="./images/icons/sprite-optimized.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__subscribe">
-          <label for="subscribe" class="form__label">
-          <h2 class="footer__text">Подпишитесь на рассылку</h2>
-          </label>
-          <input type="subscribe" name="subscribe" class="footer__input" id="subscribe" placeholder="E-mail">
-          <button type="submit" class="button">
-            <p class="footer__button">Подписаться</p>
-            <span>
-              <svg class="footer__svg">
-                <use href="./images/icons/sprite-optimized.svg#icon-send"></use>
+      <div class="footer__join">
+        <h2 class="footer__text">Присоединяйтесь</h2>
+        <ul class="social-media__icons social-media__icons--footer list">
+          <li class="social-media__icon">
+            <a href="" target="_blank" rel="noreferrer noopener" class="social-media__link social-media__link--footer">
+              <svg class="social-media__svg social-media__svg--white">
+                <use href="./images/icons/sprite-optimized.svg#icon-instagram"></use>
               </svg>
-            </span>
-          </button>
-        </div>
+            </a>
+          </li>
+          <li class="social-media__icon">
+            <a href="" target="_blank" rel="noreferrer noopener" class="social-media__link social-media__link--footer">
+              <svg class="social-media__svg social-media__svg--white">
+                <use href="./images/icons/sprite-optimized.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-media__icon">
+            <a href="" target="_blank" rel="noreferrer noopener" class="social-media__link social-media__link--footer">
+              <svg class="social-media__svg social-media__svg--white">
+                <use href="./images/icons/sprite-optimized.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-media__icon">
+            <a href="" target="_blank" rel="noreferrer noopener" class="social-media__link social-media__link--footer">
+              <svg class="social-media__svg social-media__svg--white">
+                <use href="./images/icons/sprite-optimized.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__subscribe">
+        <label for="subscribe" class="form__label">
+          <h2 class="footer__text">Подпишитесь на рассылку</h2>
+          <input type="subscribe" name="subscribe" class="footer__input" id="subscribe" placeholder="E-mail">
+        </label>
+        
+        <button type="submit" class="button">
+          <p class="footer__button">Подписаться</p>
+          <span>
+            <svg class="footer__svg">
+              <use href="./images/icons/sprite-optimized.svg#icon-send"></use>
+            </svg>
+          </span>
+        </button>
+      </div>
     </div>
   </footer>
   <script src="./js/modal.js"></script>
