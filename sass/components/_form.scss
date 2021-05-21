@@ -28,13 +28,13 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    max-width: 450px;
-    max-height: 609px;
+    width: 450px;
     background-color: var(--wh-cl);
     box-shadow: var(--team-modal-shadow);
     border-radius: 4px;
     transition: scale var(--standard-animation), visibility var(--standard-animation);
     max-height: 100vh;
+    overflow-y: scroll;
     margin-left: auto;
     margin-right: auto;
     padding: 40px;
