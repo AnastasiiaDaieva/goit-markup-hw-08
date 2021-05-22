@@ -163,14 +163,19 @@ textarea {
   }
 }
 
-.menu-container {
+.menu {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .menu-container {
+  .menu {
     display: flex;
   }
+}
+
+.menu-icon {
+  width: 40px;
+  height: 40px;
 }
 
 .logo {
@@ -186,11 +191,16 @@ textarea {
 .header__logo {
   padding-top: 24px;
   padding-bottom: 24px;
-  margin-right: 93px;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+}
+
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 93px;
+  }
 }
 
 .second-heading {
@@ -564,6 +574,12 @@ textarea {
   letter-spacing: 0.02em;
   border-bottom: 1px solid;
   border-color: var(--border-color);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__contacts, .header__link {
