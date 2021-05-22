@@ -163,6 +163,16 @@ textarea {
   }
 }
 
+.menu-container {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: flex;
+  }
+}
+
 .logo {
   display: inline-flex;
   text-decoration: none;
@@ -556,14 +566,10 @@ textarea {
   border-color: var(--border-color);
 }
 
-.header__container {
-  display: flex;
-  align-items: center;
-}
-
 .header__contacts, .header__link {
   text-decoration: none;
   color: var(--main-text-cl);
+  margin-left: auto;
 }
 
 .header__contacts .header__item + .header__item, .header__link .header__item + .header__item {
@@ -576,11 +582,6 @@ textarea {
 
 .header__nav .header__item:not(:last-child) {
   margin-right: 50px;
-}
-
-.header__contacts, .header__link {
-  display: flex;
-  margin-left: auto;
 }
 
 .header__link {
@@ -845,6 +846,7 @@ textarea {
 @media screen and (min-width: 1200px) {
   .team-members {
     flex-basis: calc(100% / 4);
+    flex-wrap: nowrap;
     justify-content: space-between;
   }
 }
@@ -865,6 +867,8 @@ textarea {
 @media screen and (min-width: 768px) {
   .team-members__card {
     margin-right: 30px;
+    width: 354px;
+    height: 536px;
   }
   .team-members__card:nth-last-child(-n + 2) {
     margin-bottom: 0px;
@@ -877,6 +881,8 @@ textarea {
 @media screen and (min-width: 1200px) {
   .team-members__card {
     margin-bottom: 0;
+    width: 270px;
+    height: 428px;
   }
   .team-members__card:not(:last-child) {
     margin-right: 30px;
@@ -1127,11 +1133,17 @@ textarea {
 }
 
 .cardset__container {
-  padding: 20px 24px;
+  padding: 20px 24px 20px 24px;
   border-left: 1px solid;
   border-right: 1px solid;
   border-bottom: 1px solid;
   border-color: var(--card-border);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cardset__container:first-child {
+    padding-bottom: 56px;
+  }
 }
 
 .footer {
