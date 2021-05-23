@@ -23,12 +23,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
+  padding: 0 15px;
   margin-bottom: 40px;
 
 
   @media screen and (min-width: 768px) {
     justify-content: center;
     margin-bottom: 30px;
+    padding: 0;
   }
 
   @media screen and (min-width: 1200px) {
@@ -78,6 +80,8 @@
 }
 
 .cardset__link {
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   transition: box-shadow var(--standard-animation);
 
@@ -120,13 +124,7 @@
   border-right: 1px solid;
   border-bottom: 1px solid;
   border-color: var(--card-border);
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    &:first-child {
-      padding-bottom: 56px;
-    }
-    
-  }
+  flex-grow: 1;
 }
 
 

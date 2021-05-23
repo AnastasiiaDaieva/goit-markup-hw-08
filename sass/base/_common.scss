@@ -6,7 +6,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  // outline: 1px solid tomato;
+  outline: 1px solid tomato;
 }
 
 body {
@@ -26,7 +26,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+.form-label {
   margin: 0;
 }
 

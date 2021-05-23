@@ -21,20 +21,21 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <div class="logo">
-        <a href="./index.html" class="logo header__logo">
-          <span class="logo logo--accent">Web</span>
-          Studio
-        </a>
-        </div>
         <div class="mobile-menu">
-        <button type="button" class="mobile-menu__button">
-          <svg width="40px" height="40px" class="menu-icon">
-            <use href="./images/icons/sprite-optimized.svg#menu-open" ></use>
-            <use href="./images/icons/sprite-optimized.svg#menu-close"></use>
-          </svg>
-        </button>
-      </div>
+          <div class="logo">
+            <a href="./index.html" class="logo header__logo">
+              <span class="logo logo--accent">Web</span>
+              Studio
+            </a>
+          </div>
+
+          <button type="button" class="mobile-menu__button">
+            <svg width="40px" height="40px" class="mobile-menu__icon" aria-label="Переключатель мобильного меню">
+              <use class="mobile-menu__open" href="./images/icons/sprite-optimized.svg#menu-open"></use>
+              <use class="mobile-menu__close" href="./images/icons/sprite-optimized.svg#menu-close"></use>
+            </svg>
+          </button>
+        </div>
         <div class="menu">
           <div class="nav-container">
             <nav class="header__nav">
@@ -87,7 +88,7 @@
                 <use href="./images/icons/sprite-optimized.svg#icon-close-button"></use>
               </svg>
             </button>
-            <div class="form js-speaker-form">
+            <form class="form js-speaker-form">
               <h2 class="form__heading">Оставьте свои данные, мы вам перезвоним</h2>
               <div class="form__field">
                 <label class="form__label">
@@ -125,7 +126,9 @@
               <div class="form__field">
                 <label class="form__label">
                   Комментарий
+                  <div class="form__container">
                   <textarea name="comment" class="form__comment" placeholder="Введите текст"></textarea>
+                </div>
                 </label>
               </div>
               <div class="form__field">
@@ -138,7 +141,7 @@
               </div>
 
               <button type="submit" class="button form__button">Отправить</button>
-            </div>
+            </form>
           </div>
         </div>
       </section>
@@ -645,15 +648,8 @@
         </div>
       </div>
     </footer>
-    <script src="./js/modal.js"></script>
-    <script>
-      ;(() => {
-        document.querySelector('.js-speaker-form').addEventListener('submit', e => {
-          e.preventDefault()
-
-          new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`))
-        })
-      })()
-    </script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src='./js/modal.js'></script>
+    <script src="./js/speaker-form.js"></script>
   </body>
 </html>
