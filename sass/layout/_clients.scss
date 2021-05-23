@@ -17,6 +17,8 @@
 }
   
 .clients__item {
+  max-width: 290px;
+  
   &:not(:last-child) {
     margin-bottom: 30px;
   }

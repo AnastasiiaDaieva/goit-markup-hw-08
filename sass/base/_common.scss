@@ -1,12 +1,12 @@
 html {
   box-sizing: border-box;
 }
-  
+
 *,
 *::before,
 *::after {
   box-sizing: inherit;
-  outline: 1px solid tomato;
+  // outline: 1px solid tomato;
 }
 
 body {
@@ -26,8 +26,7 @@ h3,
 h4,
 h5,
 h6,
-p,
-.form-label {
+p {
   margin: 0;
 }
 
@@ -57,11 +56,3 @@ img {
 textarea {
   resize: none;
 }
-
-// @mixin media($tablet) {
-//   @media screen and (min-width: 768px) {
-//     width: $tablet;
-//     margin: $tablet;
-//   }
-
-// }

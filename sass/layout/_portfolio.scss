@@ -18,14 +18,12 @@
   }
 }
 
-
 .portfolio__buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
   padding: 0 15px;
   margin-bottom: 40px;
-
 
   @media screen and (min-width: 768px) {
     justify-content: center;
@@ -39,18 +37,18 @@
 }
 
 .portfolio__filter {
-    margin-right: 8px;
-    margin-bottom: 15px;
+  margin-right: 8px;
+  margin-bottom: 15px;
 
-    &:nth-last-child(-n + 2) {
-      margin-bottom: 0px;
+  &:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
   }
 
   @media screen and (min-width: 768px) {
     margin-bottom: 0px;
   }
 }
-  
+
 .portfolio__button {
   background-color: var(--alt-backgr);
   font-weight: 500;
@@ -62,7 +60,8 @@
   padding: 6px 22px;
   border: none;
   cursor: pointer;
-  transition: background-color var(--standard-animation), color var(--standard-animation), box-shadow var(--standard-animation), border var(--standard-animation);
+  transition: background-color var(--standard-animation), color var(--standard-animation),
+    box-shadow var(--standard-animation), border var(--standard-animation);
 
   &:hover,
   &:focus {
@@ -70,13 +69,6 @@
     color: var(--wh-cl);
     box-shadow: var(--port-button-shadow);
   }
-}
-  
-.cardset__description {
-  font-size: 16px;
-  line-height: 1.87;
-  color: var(--main-text-cl);
-  font-weight: 400;
 }
 
 .cardset__link {
@@ -96,7 +88,7 @@
   align-items: center;
   overflow: hidden;
 }
-  
+
 .cardset__text {
   position: absolute;
   top: 0;
@@ -127,4 +119,9 @@
   flex-grow: 1;
 }
 
-
+.cardset__description {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--main-text-cl);
+  font-weight: 400;
+}

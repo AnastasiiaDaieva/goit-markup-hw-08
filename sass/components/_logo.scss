@@ -1,10 +1,9 @@
-
 .logo {
   display: inline-flex;
   text-decoration: none;
   color: var(--bl-cl);
 }
-  
+
 .logo--accent {
   color: var(--accent-cl);
 }
@@ -17,9 +16,7 @@
   font-size: 26px;
   line-height: 1.19;
 
-  @media screen and (min-width: 768px) {
-
+  @media screen and (min-width: 1200px) {
     margin-right: 93px;
-    
   }
 }
