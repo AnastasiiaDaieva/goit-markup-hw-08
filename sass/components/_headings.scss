@@ -35,6 +35,10 @@
   color: var(--add-cl);
   margin-bottom: 12px;
 
+  @media screen and (max-width: 479px) {
+    font-size: 15px;
+  }
+
   @media screen and (min-width: 1200px) {
     line-height: 1.15;
   }

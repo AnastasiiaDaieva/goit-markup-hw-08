@@ -69,6 +69,10 @@
   letter-spacing: 0.02em;
   margin-bottom: 32px;
   color: var(--accent-cl);
+
+  @media screen and (max-width: 445px) {
+    font-size: 24px;
+  }
 }
 
 .contacts__link--grey {
@@ -77,6 +81,10 @@
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--main-text-cl);
+
+  @media screen and (max-width: 445px) {
+    font-size: 14px;
+  }
 }
 
 .contacts__icon {
