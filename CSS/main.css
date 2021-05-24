@@ -251,6 +251,34 @@ textarea {
 }
 
 @media screen and (min-width: 768px) {
+  .contacts__mail {
+    width: 14px;
+    height: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__mail {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__phone {
+    max-width: 10px;
+    max-height: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__phone {
+    width: 10px;
+    height: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .nav__field .nav__item:not(:last-child), .contacts .nav__item:not(:last-child) {
     margin-right: 50px;
   }
