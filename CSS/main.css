@@ -956,6 +956,8 @@ body.modal-open {
 
 .header {
   font-weight: 500;
+  border-bottom: 1px solid;
+  border-color: var(--border-color);
 }
 
 @media screen and (min-width: 1200px) {
@@ -963,8 +965,6 @@ body.modal-open {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    border-bottom: 1px solid;
-    border-color: var(--border-color);
   }
 }
 
@@ -1044,6 +1044,7 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .features__item {
     max-width: 270px;
+    margin-bottom: 0;
     flex-basis: calc(100% / 4);
   }
 }
