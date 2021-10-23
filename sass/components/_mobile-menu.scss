@@ -70,7 +70,7 @@ body body.is-open {
   flex-direction: row;
   flex-wrap: wrap;
 
-  @media screen and (max-width: 445px) {
+  @media screen and (max-width: 456px) {
     align-content: center;
   }
 }
@@ -90,7 +90,7 @@ body body.is-open {
     padding-left: 10px;
   }
 
-  @media screen and (max-width: 445px) {
+  @media screen and (max-width: 456px) {
     font-size: 14px;
     flex-basis: calc(100% / 2);
     display: flex;
